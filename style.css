@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+:root {
+  --background: #080909;
+  --panel: #121615;
+  --panel-hover: #19201d;
+  --border: #303936;
+  --text: #d7d7d5;
+  --muted: #aeb1ae;
+  --accent: #72b7b3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 50% 0%, #111614 0%, var(--background) 42%),
+    var(--background);
+  color: var(--text);
+  font-family: "Courier Prime", "Courier New", monospace;
+  letter-spacing: 0.06em;
+}
+
+.site-shell {
+  width: min(94vw, 760px);
+  margin: 0 auto;
+  padding: 38px 0 70px;
+}
+
+.menu {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 40px;
+}
+
+.menu-item {
+  display: block;
+  padding: 25px 38px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+  text-decoration: none;
+  font-size: clamp(1.25rem, 4vw, 1.8rem);
+  line-height: 1.25;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.menu-item:hover,
+.menu-item:focus-visible {
+  background: var(--panel-hover);
+  border-color: #46524e;
+}
+
+.menu-item.active {
+  color: var(--accent);
+  background: #202824;
+}
+
+.content-card {
+  border: 2px solid var(--border);
+  background: #0d100f;
+  padding: clamp(30px, 6vw, 52px) clamp(24px, 6vw, 42px);
+  min-height: 430px;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+h1 {
+  margin-bottom: 48px;
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  line-height: 1.6;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 34px;
+  color: var(--muted);
+  font-size: clamp(1rem, 3.7vw, 1.35rem);
+  line-height: 1.9;
+}
+
+.divider {
+  height: 2px;
+  margin: 40px 0;
+  background: repeating-linear-gradient(
+    to right,
+    var(--border) 0,
+    var(--border) 20px,
+    transparent 20px,
+    transparent 30px
+  );
+}
+
+.catalog-row {
+  padding: 24px 0 10px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.catalog-row:last-child {
+  border-bottom: 0;
+}
+
+.catalog-row h2 {
+  color: var(--text);
+}
+
+@media (max-width: 600px) {
+  .site-shell {
+    width: 92vw;
+    padding-top: 24px;
+  }
+
+  .menu {
+    margin-bottom: 28px;
+  }
+
+  .menu-item {
+    padding: 20px 28px;
+  }
+
+  .content-card {
+    padding: 28px 22px;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+}
