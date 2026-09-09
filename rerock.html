@@ -168,20 +168,20 @@
         <hr>
 
         <p><strong>XMR: Wallet</strong></p>
-        <div class="crypto-address">88jL1nqVVHN1zdRMRgAjyJ18mA3ufJ7Vi2McbLY6Qnyp7M3Rde7tKGhLm4hu4CDR48hn3dug1yQzKL54j8AEzebq2SVJ7RD</div>
+        <div class="crypto-address" onclick="copyToClipboard('88jL1nqVVHN1zdRMRgAjyJ18mA3ufJ7Vi2McbLY6Qnyp7M3Rde7tKGhLm4hu4CDR48hn3dug1yQzKL54j8AEzebq2SVJ7RD')" style="cursor: pointer;" title="Click to copy">88jL1nqVVHN1zdRMRgAjyJ18mA3ufJ7Vi2McbLY6Qnyp7M3Rde7tKGhLm4hu4CDR48hn3dug1yQzKL54j8AEzebq2SVJ7RD</div>
 
         <p><strong>OR</strong></p>
 
         <p><strong>BTC: Wallet</strong></p>
-        <div class="crypto-address">bc1qalwk2urtgc535a6d542mqjgs0nxsvq5mq2vw0v</div>
+        <div class="crypto-address" onclick="copyToClipboard('bc1qalwk2urtgc535a6d542mqjgs0nxsvq5mq2vw0v')" style="cursor: pointer;" title="Click to copy">bc1qalwk2urtgc535a6d542mqjgs0nxsvq5mq2vw0v</div>
 
         <p><strong>Note: There's a 5% fee for BTC payments.</strong></p>
 
         <hr>
 
         <p>After payment send via hushnote.io</p>
-        <p><strong>Email:</strong> rerocker4junkies@proton.me</p>
-        <p><strong>Telegram:</strong> @Rero0cker</p>
+        <p><strong>Email:</strong> <a href="mailto:rerocker4junkies@proton.me">rerocker4junkies@proton.me</a></p>
+        <p><strong>Telegram:</strong> <a href="https://t.me/Rero0cker" target="_blank">@Rero0cker</a></p>
 
         <hr>
 
@@ -190,5 +190,15 @@
         <p><strong>TIXD…..</strong></p>
         <p><strong>Proton……</strong></p>
     </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Copied!');
+            }, function(err) {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
 </body>
 </html>

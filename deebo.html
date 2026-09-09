@@ -188,16 +188,27 @@
 
     <div class="content">
         <p><strong>XMR wallet:</strong></p>
-        <div class="crypto-address">86sVrZNPqvUjbzaMHna9TPQ9wZ7JyJJvd811kgtkKfkaUjuvE94ddfrPPohdmwL8c6dQz8cTDkTYv7tfB8smAmaX2jkgWCw</div>
+        <div class="crypto-address" onclick="copyToClipboard('86sVrZNPqvUjbzaMHna9TPQ9wZ7JyJJvd811kgtkKfkaUjuvE94ddfrPPohdmwL8c6dQz8cTDkTYv7tfB8smAmaX2jkgWCw')" style="cursor: pointer;" title="Click to copy">86sVrZNPqvUjbzaMHna9TPQ9wZ7JyJJvd811kgtkKfkaUjuvE94ddfrPPohdmwL8c6dQz8cTDkTYv7tfB8smAmaX2jkgWCw</div>
 
         <p><strong>BTC wallet:</strong></p>
-        <div class="crypto-address">bc1qt2g0c2c3vufqu806sl6fr38pa7xeqj0sv05855</div>
+        <div class="crypto-address" onclick="copyToClipboard('bc1qt2g0c2c3vufqu806sl6fr38pa7xeqj0sv05855')" style="cursor: pointer;" title="Click to copy">bc1qt2g0c2c3vufqu806sl6fr38pa7xeqj0sv05855</div>
 
         <hr>
 
         <p>Use hushnote.io to send info and tixd</p>
-        <p><strong>Email :</strong> dt4junkies@proton.me</p>
-        <p><strong>Telegram :</strong> @TraffickerNew</p>
+        <p><strong>Email :</strong> <a href="mailto:dt4junkies@proton.me">dt4junkies@proton.me</a></p>
+        <p><strong>Telegram :</strong> <a href="https://t.me/TraffickerNew" target="_blank">@TraffickerNew</a></p>
+        <p><strong>Bot:</strong> <a href="https://t.me/DeebosTrap_ShopBot" target="_blank">https://t.me/DeebosTrap_ShopBot</a></p>
     </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Copied!');
+            }, function(err) {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
 </body>
 </html>

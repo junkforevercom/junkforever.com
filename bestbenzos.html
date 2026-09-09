@@ -216,9 +216,12 @@
         <p>San Francisco, CA 98178</p>
         <p>2g ket priority xmr txid: e730597ae8a0cdbf0fc53461fab262e4c01f6298cd6d9bd9083298329s8dc (replace with your information AFTER you have paid for your items)</p>
 
-        <p>send 1 email containing the above information after you have paid to: bb4junkies@proton.me</p>
+        <p>send 1 email containing the above information after you have paid to: <a href="mailto:bb4junkies@proton.me">bb4junkies@proton.me</a></p>
 
-        <p>make a tuta.com email</p>
+        <p>Use hushnote.io to send info and tixd</p>
+        <p><strong>Email :</strong> <a href="mailto:bb4junkies@proton.me">bb4junkies@proton.me</a></p>
+        <p><strong>Telegram :</strong> <a href="https://t.me/usjcnwew" target="_blank">@usjcnwew</a></p>
+        <p><strong>Chat:</strong> <a href="https://t.me/usjchats" target="_blank">@usjchats</a></p>
 
         <p><strong>MAKE SURE U EITHER PGP THE EMAIL OR SEND THE SENSITIVE INFO IN A HUSHNOTE.SU</strong></p>
 
@@ -281,7 +284,7 @@
         </div>
 
         <p><strong>XMR Wallet :</strong></p>
-        <div class="crypto-address">45r96KzyGMcbjQiegXGEovUMypihjcYWVJucoUGTWdZRFAR2YDz4bn2NSKfj6LduJATGhxvQ62EevZF9uEnnejStRRVNtxy</div>
+        <div class="crypto-address" onclick="copyToClipboard('45r96KzyGMcbjQiegXGEovUMypihjcYWVJucoUGTWdZRFAR2YDz4bn2NSKfj6LduJATGhxvQ62EevZF9uEnnejStRRVNtxy')" style="cursor: pointer;" title="Click to copy">45r96KzyGMcbjQiegXGEovUMypihjcYWVJucoUGTWdZRFAR2YDz4bn2NSKfj6LduJATGhxvQ62EevZF9uEnnejStRRVNtxy</div>
 
         <hr>
 
@@ -340,14 +343,24 @@
         </div>
 
         <p><strong>BTC Wallet:</strong></p>
-        <div class="crypto-address">bc1qy6s520nevh8ycv09swe92kjs4ejleskq7c525w</div>
+        <div class="crypto-address" onclick="copyToClipboard('bc1qy6s520nevh8ycv09swe92kjs4ejleskq7c525w')" style="cursor: pointer;" title="Click to copy">bc1qy6s520nevh8ycv09swe92kjs4ejleskq7c525w</div>
 
         <hr>
 
         <p>Use hushnote.io to send info and tixd</p>
-        <p><strong>Email :</strong> bb4junkies@proton.me</p>
-        <p><strong>Telegram :</strong> @usjcnwew</p>
-        <p><strong>Chat:</strong> @usjchats</p>
+        <p><strong>Email :</strong> <a href="mailto:bb4junkies@proton.me">bb4junkies@proton.me</a></p>
+        <p><strong>Telegram :</strong> <a href="https://t.me/usjcnwew" target="_blank">@usjcnwew</a></p>
+        <p><strong>Chat:</strong> <a href="https://t.me/usjchats" target="_blank">@usjchats</a></p>
     </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Copied!');
+            }, function(err) {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
 </body>
 </html>
