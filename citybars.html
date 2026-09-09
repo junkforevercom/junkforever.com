@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityBars - Junks Forever</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #0a0b0c;
+            color: #d4d4d4;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            max-width: 1500px;
+            margin-left: auto;
+            margin-right: auto;
+            border-left: 1px solid #2c3531;
+            border-right: 1px solid #2c3531;
+        }
+
+        nav {
+            position: relative;
+            height: 35px;
+            margin: 0 0 1rem 0;
+            border-bottom: none;
+        }
+
+        nav::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -4px;
+            height: 1px;
+            background: #2c3531;
+        }
+
+        nav ul {
+            position: relative;
+            z-index: 1;
+            height: 35px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2px;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+
+        nav a {
+            display: block;
+            color: #d4d4d4;
+            text-decoration: none;
+            font-size: 14px;
+            border: 1px solid #2c3531;
+            border-bottom: none;
+            padding: 0.5rem 1rem;
+            background: rgba(44, 53, 49, 0.4);
+            border-radius: 4px 4px 0 0;
+            transition: all 0.2s ease;
+            margin-bottom: 0;
+        }
+
+        nav a:hover {
+            background: rgba(44, 53, 49, 0.8);
+            color: #66fcf1;
+            text-decoration: underline;
+        }
+
+        nav li.active a {
+            margin-bottom: -1px;
+            color: #45a29e;
+            background: rgba(44, 53, 49, 0.8);
+            position: relative;
+        }
+
+        nav li.active a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+            height: 1px;
+            background: #0a0b0c;
+        }
+
+        .content {
+            background-color: transparent;
+            border: 1px solid #2c3531;
+            padding: 2rem;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 14px;
+            white-space: pre-wrap;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        a {
+            color: #45a29e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #66fcf1;
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #2c3531;
+            margin: 20px 0;
+        }
+
+        .crypto-address {
+            background-color: rgba(44, 53, 49, 0.5);
+            padding: 10px;
+            margin: 10px 0;
+            word-break: break-all;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            border: 1px solid #2c3531;
+        }
+
+        .pricing-section {
+            margin: 20px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+
+            nav {
+                height: auto;
+            }
+
+            nav::after {
+                display: none;
+            }
+
+            nav ul {
+                height: auto;
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            nav a {
+                width: 100%;
+                border: 1px solid #2c3531;
+                border-radius: 4px;
+                padding: 0.5rem 1rem;
+                text-align: center;
+                background-color: transparent;
+                margin-bottom: 0;
+            }
+
+            nav li.active a {
+                border-bottom: 1px solid #2c3531;
+                margin-bottom: 0;
+            }
+
+            .content {
+                padding: 1rem;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bestbenzos.html">BestBenzos</a></li>
+            <li><a href="deebo.html">Deebos Trap</a></li>
+            <li class="active"><a href="citybars.html">CityBars</a></li>
+            <li><a href="rerock.html">Rerock</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <p><strong>INSTRUCTIONS:</strong></p>
+
+        <p>John Doe</p>
+        <p>123 Dairy St</p>
+        <p>San Francisco, CA 98178</p>
+        <p>2g ket priority xmr/btc txid: e730597ae8a0cdbf0fc53461fab262e4c01f6298cd6d9bd9083298329s8dc (replace with your information AFTER you have paid for your items)</p>
+
+        <p>send 1 email containing the above information after you have paid to: orders @ cb4junks.su</p>
+
+        <p>make a tuta.com email</p>
+
+        <p><strong>MAKE SURE U EITHER PGP THE EMAIL OR SEND THE SENSITIVE INFO IN A HUSHNOTE.SU</strong></p>
+
+        <p><strong>XMR wallet:</strong></p>
+        <div class="crypto-address">83ZP77YuTaoJmZ4aPmJVqANkkmQzhFMRpVzEaSfeA58yAdoxwZyq9zM8i7k7qKvXV9896V3VdhbmW8tSVVu7F8SRRqCeGMw</div>
+
+        <hr>
+
+        <div class="pricing-section">
+            <p><strong>R039 XANAX</strong> 4mg bromazolam, bitter</p>
+            <p>50 pills: $60</p>
+            <p>100 pills: $115</p>
+            <p>250 pills: $220</p>
+            <p>500 pills: $350</p>
+            <p>1000 pills: $575</p>
+            <p>2500 pills: $1,434</p>
+            <p>5000 pills: $2,746</p>
+            <p>10000 pills: $5,382 (email for bigger bulk pricing)</p>
+
+            <p><strong>Y21, GG249, S903 XANAX</strong> 6mg bromoethylazolam, bitter</p>
+            <p>50 pills: $60</p>
+            <p>100 pills: $115</p>
+            <p>250 pills: $220</p>
+            <p>500 pills: $350</p>
+            <p>1000 pills: $575</p>
+            <p>2500 pills: $1,434</p>
+            <p>5000 pills: $2,746</p>
+            <p>10000 pills: $5,382 (email for bigger bulk pricing)</p>
+
+            <p><strong>V2090 XANAX</strong> 2mg phenazolam (clobromazolam), bitter</p>
+            <p>50 pills: $60</p>
+            <p>100 pills: $115</p>
+            <p>250 pills: $220</p>
+            <p>500 pills: $350</p>
+            <p>1000 pills: $575</p>
+            <p>2500 pills: $1,434</p>
+            <p>5000 pills: $2,746</p>
+            <p>10000 pills: $5,382 (email for bigger bulk pricing)</p>
+
+            <p><strong>ADDERALL</strong> B974 and DP30 High Quality Adderall 30MG IR Presses</p>
+            <p>50 pills: $115</p>
+            <p>100 pills: $150</p>
+            <p>200 pills: $300</p>
+            <p>300 pills: $395</p>
+            <p>500 pills: $450</p>
+            <p>1000 pills: $750</p>
+            <p>2000 pills: $1490</p>
+            <p>5000 pills: $3250</p>
+            <p>10000 pills: $5750</p>
+
+            <p><strong>S-ISOMER KETAMINE</strong></p>
+            <p>2g: $60</p>
+            <p>4g: $100</p>
+            <p>7g: $140</p>
+            <p>14g: $220</p>
+            <p>28g: $420</p>
+            <p>112g: $1,532</p>
+            <p>250g: $3,270</p>
+            <p>500g: $6,020</p>
+            <p>1000g: $11,520 (email for bigger bulk pricing)</p>
+        </div>
+
+        <p><strong>BTC wallet:</strong></p>
+        <div class="crypto-address">bc1qpvcn5qhw9a9ragvaw8dywswrrzvdjhzzgl9qpx</div>
+
+        <hr>
+
+        <p>Use hushnote.io to send info and tixd</p>
+        <p><strong>Email:</strong> city4junkies@proton.me</p>
+        <p><strong>Telegram:</strong> @legitcitybarz</p>
+    </div>
+</body>
+</html>
